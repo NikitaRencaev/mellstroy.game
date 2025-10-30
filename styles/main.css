@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bitcount+Grid+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* reset styles */
+@import './reset.css';
+
+/* blocks styles */
+@import './blocks/hero.css';
+@import './blocks/casino.css';
+@import './blocks/history.css';
+@import './blocks/footer.css';
+
+/* main styles */
+@font-face {
+    font-family: "Arial Black";
+    src: url('./../fonts/arial_black.ttf');
+}
+
+body {
+    overflow-x: hidden;
+    background: black;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-size:  5vw;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+    section, footer{
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        max-width: 320px;
+        margin: auto;
+        padding-top: 100px;
+        font-size: 20px;
+    }
+}

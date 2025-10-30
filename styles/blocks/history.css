@@ -1,0 +1,281 @@
+.history {
+    background-image: url('./../../img/histroy/background.png');
+}
+
+.history .container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.history__title {
+    position: relative;
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.history__title h2 {
+    text-align: center;
+    font-size: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 25px;
+    text-transform: uppercase;
+    box-shadow: 0 0 50px 50px #161616;
+    border-radius: 25px;
+    background: #161616;
+}
+
+.history__title::after {
+    content: '';
+    position: absolute;
+    left: -200px;
+    top: -10px;
+    width: 123px;
+    height: 301px;
+    background-image: url('./../../img/histroy/history-arrow-bottom.png');
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+
+    animation: arrow 3s ease infinite;
+}
+.history__title::before {
+    content: '';
+    position: absolute;
+    right: -200px;
+    top: -10px;
+    width: 123px;
+    height: 301px;
+    background-image: url('./../../img/histroy/history-arrow-bottom.png');
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+
+    animation: arrow 3s ease infinite;
+}
+
+@keyframes arrow {
+    0% {
+        top: -10px;
+    }
+    50% {
+        top: -50px;
+    }
+    100% {
+        top: -10px;
+    }
+}
+
+/* element */
+.history__elements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 250px;
+}
+.history__element {
+    position: relative;
+}
+.history-element__title {
+    font-family: "Arial Black";
+    font-size: 65px;
+    display: inline-block;
+    text-transform: uppercase;
+    box-shadow: 0 0 50px 50px #161616;
+    background-color: #161616;
+}
+.history-element__info {
+    box-shadow: 0 0 60px 60px #161616;
+    background: #161616;
+}
+
+.red-text {
+    color: #FF0000;
+}
+
+/* elements decorations */
+.history__element-1::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: -210px;
+    top: 120px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/smiley-with-glasses.png');
+}
+.history__element-1::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -210px;
+    bottom: 20px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/fly-money.png');
+}
+
+.history__element-2::after {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: -210px;
+    bottom: 20px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/dancer-man.png');
+}
+.history__element-2::before {
+    content: '';
+    position: absolute;
+    width: 131px;
+    height: 169px;
+    right: -210px;
+    top: 120px;
+    background-image: url('./../../img/histroy/dancer-women.png');
+    background-repeat: no-repeat;
+}
+
+.history__element-3::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 107px;
+    left: -210px;
+    top: 240px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/fack.png');
+}
+.history__element-3::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 107px;
+    right: -210px;
+    bottom: 240px;
+    background-image: url('./../../img/histroy/fack.png');
+    background-repeat: no-repeat;
+}
+
+.history__element-4::after {
+    content: '';
+    position: absolute;
+    width: 222px;
+    height: 133px;
+    left: -260px;
+    top: 120px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/angry-smiley.png');
+}
+.history__element-4::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    right: -210px;
+    bottom: 20px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/swearing.png');
+}
+
+.history__element-5::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 145px;
+    left: -210px;
+    bottom: 20px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/bulb.png');
+}
+.history__element-5::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -210px;
+    top: 120px;
+    background-image: url('./../../img/histroy/microphone.png');
+    background-repeat: no-repeat;
+}
+
+.history__element-6::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: -210px;
+    top: 240px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/drum.png');
+}
+.history__element-6::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -210px;
+    bottom: 240px;
+    background-image: url('./../../img/histroy/in-headphones.png');
+    background-repeat: no-repeat;
+}
+
+.history__element-7::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: -210px;
+    top: 120px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/shocked.png');
+}
+.history__element-7::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -210px;
+    bottom: 20px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/surprised.png');
+}
+
+.history__element-8::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: -210px;
+    bottom: 20px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/histroy/like.png');
+}
+.history__element-8::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -210px;
+    top: 120px;
+    background-image: url('./../../img/histroy/bath.png');
+    background-repeat: no-repeat;
+}
+
+/* elements decorations animation */
+.history__element::after, .history__element::before {
+    transition: all ease 1s;
+    transform: rotate(0deg);
+}
+
+.history__element.active::after, .history__element.active::before {
+    animation: smile 80s ease;
+}
+@keyframes smile {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

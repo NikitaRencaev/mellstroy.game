@@ -1,0 +1,342 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('./../../img/hero/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__title {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__title h1 {
+    transform: rotate(1deg);
+}
+
+/* mellstroy */
+.hero__mellstroy {
+    position: relative;
+    top: -5.1vw;
+    max-width: 22.813vw;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 5;
+}
+.hero__mellstroy:hover {
+    cursor: pointer;
+}
+.hero-mellstroy-img {
+    position: relative;
+    z-index: 2;
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .hero-mellstroy-img {
+    transform: rotate(-3deg) scale(1.05);
+}
+.hero__mellstroy:hover .hero-mellstroy-img {
+    transform: scale(1.02);
+}
+.hero__mellstroy.active:hover .hero-mellstroy-img {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+/* mellstroy decoration */
+
+.hero-mellstroy__money-decoration img {
+    position: absolute;
+    z-index: 1;
+}
+
+.banknote-1 {
+    top: 11.162vh;
+    left: -1.042vw;
+    width: 3.281vw;
+    height: auto;
+    transform: rotate(27.19deg);
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .banknote-1 {
+    top: 9.162vh;
+    transform: rotate(15.19deg);
+}
+
+.coin-1 {
+    top: 17.882vh;
+    left: -5.313vw;
+    width: 3.281vw;
+    height: auto;
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .coin-1 {
+    top: 15.882vh;
+    left: -6.771vw;
+    transform: rotate(-20.19deg);
+}
+
+.banknote-2 {
+    top: 22.7vh;
+    left: -4.167vw;
+    width: 3.229vw;
+    height: auto;
+    transform: rotate(-37.36deg);
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .banknote-2 {
+    left: -5.208vw;
+    transform: rotate(-20.36deg);
+}
+
+.coin-2 {
+    top: 33.485vh;
+    left: -3.333vw;
+    width: 3.333vw;
+    height: auto;
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .coin-2 {
+    top: 35.485vh;
+    left: -4.688vw;
+    transform: rotate(-20.19deg);
+}
+
+.banknote-3 {
+    top: 37.472vh;
+    left: -1.458vw;
+    width: 4.219vw;
+    height: auto;
+    transform: rotate(-23.62deg);
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .banknote-3 {
+    top: 39.872vh;
+    left: -2.813vw;
+    transform: rotate(-35.36deg);
+}
+
+.banknote-4 {
+    top: 10.82vh;
+    right: 2.813vw;
+    width: 5.417vw;
+    height: auto;
+    transform: rotate(-7.11deg);
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .banknote-4 {
+    top: 8.82vh;
+    right: 1.042vw;
+    transform: rotate(-28.36deg);
+}
+
+.coin-3 {
+    top: 17.882vh;
+    right: 1.875vw;
+    width: 3.49vw;
+    height: auto;
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .coin-3 {
+    top: 15.882vh;
+    right: 0.26vw;
+    transform: rotate(15.19deg);
+}
+
+.banknote-5 {
+    top: 19.134vh;
+    right: -3.49vw;
+    width: 4.271vw;
+    height: auto;
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .banknote-5 {
+    top: 19.134vh;
+    right: -5.208vw;
+    transform: rotate(30.36deg);
+}
+
+.coin-4 {
+    top: 28.36vh;
+    right: -2.813vw;
+    width: 3.594vw;
+    height: auto;
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .coin-4 {
+    top: 27.36vh;
+    right: -4.427vw;
+    transform: rotate(30.36deg);
+}
+
+.banknote-6 {
+    top: 34.9vh;
+    right: -0.677vw;
+    width: 3.333vw;
+    height: auto;
+    transform: rotate(-55.86deg);
+    transition: all 1s ease;
+}
+.hero__mellstroy.active .banknote-6 {
+    top: 36.9vh;
+    right: -2.604vw;
+    transform: rotate(-80.36deg);
+}
+
+
+/* cars mellstroy */
+    /* cars info window */
+    .info-window {
+        position: absolute;
+        max-width: 240px;
+        height: auto;
+        background: rgba(20, 20, 20, 0.9);
+        padding: 25px;
+        border-radius: 50px 50px 50px 0;
+        border: 1px solid #848484;
+
+        opacity: 0;
+        transition: opacity 1.2s ease;
+    }
+    .info-window p {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 0.829vw;
+        letter-spacing: 0.5px;
+    }
+    .info-window p span {
+        font-weight: 500;
+    }
+    .car.active .info-window {
+        opacity: 1;
+    }
+    .hero__mellstroy .info-window {
+        max-width: 500px;
+        right: -450px; top: -50px;
+
+        z-index: 3;
+    }
+    .hero__mellstroy.active .info-window {
+        opacity: 1;
+    }
+    .hero__mellstroy .info-window p {
+        font-size: 0.7vw;
+    }
+
+    /* hammer */
+    .hero-mellstroy__hammer {
+        position: absolute;
+        width: 48.073vw;
+        height: auto;
+        z-index: 0;
+        left: -66%;
+        top: 257px;
+    }
+    .blicks-hammer {
+        width: 36.667vw;
+        height: auto;
+
+        position: absolute;
+        top: 28%;
+        left: 12%;
+        z-index: 1;
+
+        opacity: 0%;
+        transition: all 1s ease;
+    }
+    .hero__mellstroy.active .blicks-hammer {
+        opacity: 50%;
+    }
+
+    .hero__mellstroy-cars {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: bottom;
+        position: absolute;
+        width: 100vw;
+        bottom: 50px;
+    }
+
+    .hero-mellstroy-cars__left {
+        vertical-align: bottom;
+    }
+
+    /* ferrari */
+    .mellstroy-cars__ferrari {
+        position: relative;
+        left: -324px;
+        bottom: -115px;
+        z-index: 6;
+
+        transition: all 1s ease;
+    }
+    .mellstroy-cars__ferrari:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+    .mellstroy-cars__ferrari.active {
+        left: -274px;
+    }
+    .ferrari__info-window {
+        right: -100px; top: -30px;
+    }
+
+    /* lamba */
+    .mellstroy-cars__lamba {
+        position: relative;
+        left: -258px;
+        z-index: 6;
+
+        transition: all 1s ease;
+    }
+    .mellstroy-cars__lamba:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+    .mellstroy-cars__lamba.active {
+        left: -208px;
+    }
+    .lamba__info-window {
+        right: -150px; top: -50px;
+    }
+
+    /* bentley */
+    .mellstroy-cars__bentley {
+        position: relative;
+        right: -335px;
+        bottom: -120px;
+        z-index: 6;
+
+        transition: all 1s ease;
+    }
+    .mellstroy-cars__bentley:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+    .mellstroy-cars__bentley.active {
+        right: -285px;
+    }
+    .bentley__info-window {
+        left: -150px; top: -50px;
+        border-radius: 50px 50px 0 50px;
+    }
+
+    /* bmw */
+    .mellstroy-cars__bmw {
+        position: relative;
+        right: -222px;
+        z-index: 6;
+
+        transition: all 1s ease;
+    }
+    .mellstroy-cars__bmw:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+    .mellstroy-cars__bmw.active {
+        right: -172px;
+    }
+    .bmw__info-window {
+        left: -100px; top: -50px;
+        border-radius: 50px 50px 0 50px;
+    }

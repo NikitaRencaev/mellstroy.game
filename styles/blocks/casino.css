@@ -1,0 +1,105 @@
+.casino {
+    position: relative;
+    background-color: #161616;
+    background-size: contain;
+    background-image: url('./../../img/casino/background.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vw;
+}
+
+.container {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 150px 0 50px;
+}
+
+.casino__title {
+    font-family: "Arial Black";
+    font-size: 3.333vw;
+}
+.casino__title span {
+    text-decoration: underline;
+}
+
+.casino__subtitle {
+    max-width: 1100px;
+    font-family: "Ubuntu";
+    font-size: 1.775vw;
+    color: #2B2B2B;
+
+    padding-bottom: 20px;
+}
+
+.casino__wheel-of-fortune {
+    position: relative;
+}
+
+.wheel {
+    position: absolute;
+    z-index: 2;
+    left: 1.25vw; top: 1.25vw;
+    transition: all 8s ease-out;
+}
+
+/* .wheel:hover{
+    transform: rotate(2180deg);
+} */
+.wheel:hover {
+    cursor: pointer;
+}
+.wheel.active:hover {
+    cursor: default;
+}
+.wheel-of-fortune {
+    z-index: 1;
+}
+
+.casino__bottom {
+    display: flex;
+    gap: 90px;
+}
+
+.casino__apartament {
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.casino__win-title {
+    position: relative;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: red;
+}
+
+.casino__win-window {
+    position: relative;
+    left: 0;
+    transition: all 1s ease;
+    opacity: 0;
+}
+.casino__win-window.active {
+    left: 50px;
+    opacity: 1;
+}
+.casino__win-window.active .casino__win-title {
+    animation: winTitle 0.2s linear infinite;
+}
+
+@keyframes winTitle {
+    0% {
+        left: 5px; right: 0; top: 0; bottom: 5px;
+    }
+    40% {
+        left: 0; right: 5px; top: 5px; bottom: 0;
+    }
+    70% {
+        left: 5px; right: 0; top: 5px; bottom: 0;
+    }
+    100% {
+        left: 5px; right: 0; top: 0; bottom: 5px;
+    }
+}
